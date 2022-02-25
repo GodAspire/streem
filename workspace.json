@@ -1,7 +1,15 @@
 {
-  "version": 2,
-  "projects": {
-    "web-app": "apps/web-app",
-    "web-app-e2e": "apps/web-app-e2e"
-  }
+    "version": 2,
+    "projects": {
+        "core": "libs/core",
+        "soundcloud": "libs/soundcloud",
+        "spotify": "libs/spotify",
+        "ui": "libs/ui",
+        "utility": "libs/utility",
+        "web-app": "apps/web-app",
+        "web-app-e2e": "apps/web-app-e2e",
+        "web-site": "apps/web-site",
+        "web-site-e2e": "apps/web-site-e2e",
+        "youtube": "libs/youtube"
+    }
 }

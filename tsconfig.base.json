@@ -1,20 +1,27 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "rootDir": ".",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
-    "lib": ["es2017", "dom"],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {}
-  },
-  "exclude": ["node_modules", "tmp"]
+    "compileOnSave": false,
+    "compilerOptions": {
+        "rootDir": ".",
+        "sourceMap": true,
+        "declaration": false,
+        "moduleResolution": "node",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "target": "es2015",
+        "module": "esnext",
+        "lib": ["es2017", "dom"],
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "baseUrl": ".",
+        "paths": {
+            "@streem/core/*": ["libs/core/src/*"],
+            "@streem/soundcloud/*": ["libs/soundcloud/src/*"],
+            "@streem/spotify/*": ["libs/spotify/src/*"],
+            "@streem/ui/*": ["libs/ui/src/*"],
+            "@streem/utility/*": ["libs/utility/src/*"],
+            "@streem/youtube/*": ["libs/youtube/src/*"]
+        }
+    },
+    "exclude": ["node_modules", "tmp"]
 }

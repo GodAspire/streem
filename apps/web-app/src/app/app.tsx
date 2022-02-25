@@ -1,14 +1,19 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.scss';
-import NxWelcome from './nx-welcome';
+import { BrowserRouter } from 'react-router-dom';
+import { RecoilRoot } from 'recoil';
 
-export function App() {
-  return (
-    <>
-      <NxWelcome title="web-app" />
-      <div />
-    </>
-  );
-}
+import Layout from '@streem/ui/layout';
+import ViewsRouter from '@streem/ui/ViewsRouter';
+
+const App = () => {
+    return (
+        <BrowserRouter>
+            <RecoilRoot>
+                <Layout>
+                    <ViewsRouter />
+                </Layout>
+            </RecoilRoot>
+        </BrowserRouter>
+    );
+};
 
 export default App;

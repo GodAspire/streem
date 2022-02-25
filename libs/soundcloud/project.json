@@ -1,0 +1,23 @@
+{
+    "root": "libs/soundcloud",
+    "sourceRoot": "libs/soundcloud/src",
+    "projectType": "library",
+    "tags": [],
+    "targets": {
+        "lint": {
+            "executor": "@nrwl/linter:eslint",
+            "outputs": ["{options.outputFile}"],
+            "options": {
+                "lintFilePatterns": ["libs/soundcloud/**/*.{ts,tsx,js,jsx}"]
+            }
+        },
+        "test": {
+            "executor": "@nrwl/jest:jest",
+            "outputs": ["coverage/libs/soundcloud"],
+            "options": {
+                "jestConfig": "libs/soundcloud/jest.config.js",
+                "passWithNoTests": true
+            }
+        }
+    }
+}
